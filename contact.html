@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Wesite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Jeany Aurellia</h3>
+        </div>
+        
+        <div class="fas fa-bars" id="menu-bar"></div>
+
+        <nav class="navbar">
+            <a href="index.html" class="menu_link">Home</a>
+            <a href="profile.html" class="menu_link">Profile</a>
+            <a href="contact.html" class="menu_link">Contact</a>
+        </nav>
+    </header>
+    <section class="container2">
+            <div class="form input">
+                <h2>Message Us</h2>
+                <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                <table id="input">
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input class="text" placeholder="Nama" type="text" name="full-name" /></td>
+                        <br/>
+                    </tr>
+
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td> 
+                        <td><input class="text" type="date" name="birth-date"></td>
+                    <br/>
+                    </tr>
+
+                    <tr>
+                        <td>Jenis Kelamin</td> 
+                        <td>:</td>
+                        <td class="gender"><input type="radio" id="male" name="gender" value="Laki-laki">
+                            <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label></td>
+                    <br/>
+                    </tr>
+
+                    <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea placehoder="Pesan" name="messages"></textarea></td>
+                    <br/>
+                    </tr>
+
+                    <tr>
+                        <td><input class="submit" type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+
+            <div class="form output">
+                <table>
+                    <tr>
+                        <td><p>Nama</p></td>         
+                        <td>:</td> 
+                        <td><span id="sender-full-name"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td><p>Tanggal Lahir</p></td>         
+                        <td>:</td> 
+                        <td><span id="sender-birth-date"></span></td>
+                    </tr>
+                    <tr>
+                        <td><p>Jenis Kelamin</p></td>         
+                        <td>:</td> 
+                        <td><span id="sender-gender"></span></td>
+                    </tr>                    
+                    <tr>
+                        <td><p>Pesan</p></td>         
+                        <td>:</td> 
+                        <td><span id="sender-messages"></span></td>
+                    </tr>
+
+                </table>
+            </div>
+        
+    </section>
+    
+    <script src="js/contact.js"></script>
+</body>
+</html>
